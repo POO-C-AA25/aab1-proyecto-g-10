@@ -5,3 +5,17 @@
 # Detalle: idFactura;idProducto;nombreProducto;categoria;cantidad;precioUnitario;subtotalLinea
 5496778e;d7f5b2c3;Rotuladores fluorescentes;EDUCACION;1;2,20;2,20
 
+>>> FACTURACION INICIADA EN: 2025-06-04 10:27:39
+# Facturas
+# Encabezado: idFactura;fecha;clienteId;clienteNombre;correo;telefono;direccion;subtotal;iva;total
+316ef61a;2025-06-04;1106004920;Mateo Gonzalez;mateo@gmail.com;0987025825;Loja;2,50;0,30;2,55
+# Detalle: idFactura;idProducto;nombreProducto;categoria;cantidad;precioUnitario;subtotalLinea
+316ef61a;189e8860;Detergente Deja;VIVIENDA;2;1,25;2,50
+
+>>> FACTURACION INICIADA EN: 2025-06-04 10:30:57
+# Facturas
+# Encabezado: idFactura;fecha;clienteId;clienteNombre;correo;telefono;direccion;subtotal;iva;total
+9eead678;2025-06-04;1106004920;mamamam mmama;mamamam@gmail.com;1478523690;loja;1,25;0,15;1,28
+# Detalle: idFactura;idProducto;nombreProducto;categoria;cantidad;precioUnitario;subtotalLinea
+9eead678;189e8860;Detergente Deja;VIVIENDA;1;1,25;1,25
+

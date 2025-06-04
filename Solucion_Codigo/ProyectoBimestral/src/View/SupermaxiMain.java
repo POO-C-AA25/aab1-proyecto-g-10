@@ -38,7 +38,7 @@ public class SupermaxiMain {
                     String clave = entrada.nextLine().trim();
 
                     if (clave.equals("1150525077")) {
-                        gestor.nuevoProducto(entrada);
+                        gestor.nuevoProducto();
                     } else {
                         System.out.println("Acceso denegado. Contraseña incorrecta.");
                         continuar = false; // Finaliza el programa si la clave es incorrecta
@@ -46,7 +46,7 @@ public class SupermaxiMain {
                     break;
 
                 case "3":
-                    gestor.generarFactura(entrada);
+                    gestor.generarFactura();
                     break;
 
                 case "4":

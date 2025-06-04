@@ -6,3 +6,19 @@ d7f5b2c3;Rotuladores fluorescentes;1;2,20
 Ventas por Categoría
 nombreCategoria;unidadesVendidas;totalGenerado
 EDUCACION;1;2,20
+>>> ESTADÍSTICAS INICIADAS EN: 2025-06-04 10:27:39
+Ventas por Producto
+codigoProducto;nombreProducto;unidadesVendidas;totalGenerado
+189e8860;Detergente Deja;2;2,50
+
+Ventas por Categoría
+nombreCategoria;unidadesVendidas;totalGenerado
+VIVIENDA;2;2,50
+>>> ESTADÍSTICAS INICIADAS EN: 2025-06-04 10:30:57
+Ventas por Producto
+codigoProducto;nombreProducto;unidadesVendidas;totalGenerado
+189e8860;Detergente Deja;1;1,25
+
+Ventas por Categoría
+nombreCategoria;unidadesVendidas;totalGenerado
+VIVIENDA;1;1,25
