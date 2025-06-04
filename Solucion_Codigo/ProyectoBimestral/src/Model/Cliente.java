@@ -5,7 +5,7 @@ package Model;
  * Utilizada para asociar un comprador a una factura dentro del sistema.
  */
 public class Cliente {
-    private String id;     // Identificador único del cliente
+    private String id;         // Identificador único del cliente
     private String nombre;     // Nombre completo
     private String email;      // Dirección de correo electrónico
     private String celular;    // Número telefónico

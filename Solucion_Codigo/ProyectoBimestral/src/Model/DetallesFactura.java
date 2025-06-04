@@ -6,11 +6,13 @@ public class DetallesFactura {
     private double precioIndividual;
     private double valorSubtotal;
 
-    public DetallesFactura() {}
+    public DetallesFactura() {
+        // Constructor Vacío
+    }
 
-    public DetallesFactura(Producto producto, int cantidad, double precioUnitario) {
-        this.productoAsociado = producto;
-        this.unidadesVendidas = cantidad;
+    public DetallesFactura(Producto productoAsociado, int unidadesVendidas, double precioUnitario) {
+        this.productoAsociado = productoAsociado;
+        this.unidadesVendidas = unidadesVendidas;
         this.precioIndividual = precioUnitario;
         calcularSubtotal();
     }

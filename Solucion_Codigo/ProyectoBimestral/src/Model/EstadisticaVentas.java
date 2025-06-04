@@ -1,5 +1,8 @@
 package Model;
 
+import java.io.FileOutputStream;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Formatter;
@@ -69,20 +72,20 @@ public class EstadisticaVentas {
         }
         cat.unidadesVendidas += cantidad;
         cat.totalGenerado += subtotal;
-    }
+    }   
 
     /** Busca si el producto ya tiene un registro previo de ventas */
-    private RegistroProducto buscarProductoRegistrado(String codigo) {
+    public RegistroProducto buscarProductoRegistrado(String codigo) {
         for (RegistroProducto rp : ventasPorProducto) {
             if (rp.codigoProducto.equals(codigo)) {
                 return rp;
             }
         }
         return null;
-    }
+    }    
 
-    /** Busca si la categoría ya tiene un registro previo de ventas */
-    private RegistroCategoria buscarCategoriaRegistrada(String nombreCategoria) {
+    // Busca si la categoría ya tiene un registro previo de ventas
+    public RegistroCategoria buscarCategoriaRegistrada(String nombreCategoria) {
         for (RegistroCategoria rc : ventasPorCategoria) {
             if (rc.nombreCategoria.equalsIgnoreCase(nombreCategoria)) {
                 return rc;
@@ -92,11 +95,14 @@ public class EstadisticaVentas {
     }
 
     /**
-     * Guarda las estadísticas en un archivo CSV llamado "datosestadisticas.csv".
+     * Guarda las estadísticas en un archivo CSV llamado "persistirEstadisticas.csv".
      * Incluye dos secciones: por producto y por categoría.
      */
     public void persistirEstadisticasCSV() {
-        try (Formatter f = new Formatter("datosestadisticas.csv")) {
+        try (Formatter f = new Formatter(new FileOutputStream("datosestadisticas.csv", true))) {
+            LocalDateTime ahora = LocalDateTime.now();
+            DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            f.format(">>> ESTADÍSTICAS INICIADAS EN: " + ahora.format(formato) + "\n");
             f.format("Ventas por Producto%n");
             f.format("codigoProducto;nombreProducto;unidadesVendidas;totalGenerado%n");
             for (RegistroProducto rp : ventasPorProducto) {
@@ -113,6 +119,7 @@ public class EstadisticaVentas {
             System.err.println("Error al guardar estadísticas: " + e.getMessage());
         }
     }
+    
 
     public void mostrarResumenEstadistico() {
         if (ventasPorProducto.isEmpty()) {

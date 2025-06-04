@@ -1,7 +1,8 @@
+>>> ESTADÍSTICAS INICIADAS EN: 2025-06-04 02:13:30
 Ventas por Producto
 codigoProducto;nombreProducto;unidadesVendidas;totalGenerado
-d5f6b9c1;Queso cheddar 300g;2;6,60
+d7f5b2c3;Rotuladores fluorescentes;1;2,20
 
 Ventas por Categoría
 nombreCategoria;unidadesVendidas;totalGenerado
-ALIMENTACION;2;6,60
+EDUCACION;1;2,20
