@@ -1,0 +1,6 @@
+# Facturas
+# Encabezado: idFactura;fecha;clienteId;clienteNombre;correo;telefono;direccion;subtotal;iva;total
+eec10ba2;2025-06-03;1150525077;Mateo;mra@gmail.com;0985612365;Zalapa;6,60;0,79;6,40
+# Detalle: idFactura;idProducto;nombreProducto;categoria;cantidad;precioUnitario;subtotalLinea
+eec10ba2;d5f6b9c1;Queso cheddar 300g;ALIMENTACION;2;3,30;6,60
+

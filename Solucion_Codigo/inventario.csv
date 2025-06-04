@@ -1,0 +1,145 @@
+idProducto;nombre;categoria;precioNormal;cantidadStock;fechaCaducidad
+a1f3d2b7;Azúcar 1kg;ALIMENTACION;1,25;34;2025-07-12
+b7e9c3f2;Cuaderno universitario;EDUCACION;2,50;50;2025-07-18
+c2a7e9d1;Jeringuillas estériles;SALUD;0,75;60;2025-06-25
+e6d1f9b3;Arroz extra 2kg;ALIMENTACION;2,30;42;2025-06-29
+d4b5e8a2;Camisa manga larga hombre;VESTIMENTA;14,99;25;2025-07-05
+f8a2c1e7;Pasta dental familiar;SALUD;1,95;80;2025-07-08
+a9c3d7e5;Lápiz grafito HB;EDUCACION;0,20;100;2025-06-23
+b2f8e9d6;Leche deslactosada 1L;ALIMENTACION;1,35;30;2025-07-01
+d6e3f9c4;Alquiler mensual habitación;VIVIENDA;180,00;3;2025-06-20
+e1a7c5b8;Pan de molde integral;ALIMENTACION;1,10;45;2025-06-28
+c3e5f7a9;Bata médica unisex;VESTIMENTA;22,00;10;2025-07-09
+f2d7b1e3;Termómetro digital;SALUD;7,85;15;2025-07-11
+a5f6e8b4;Zapatos escolares niños;VESTIMENTA;18,90;22;2025-06-26
+b6c2d9e3;Agenda 2025 escolar;EDUCACION;3,20;40;2025-07-04
+d1e8f3a6;Yogur griego natural;ALIMENTACION;0,99;55;2025-06-21
+e9b7d6f2;Desinfectante 1L;SALUD;2,75;38;2025-07-03
+c7f2a1b5;Vestido casual mujer;VESTIMENTA;24,99;17;2025-06-30
+f3d6e9c1;Manzanas verdes 1kg;ALIMENTACION;1,60;50;2025-06-22
+a2b8c5f7;Renta mensual apartamento;VIVIENDA;320,00;2;2025-07-07
+b5e4c7a3;Bolígrafo azul;EDUCACION;0,35;85;2025-06-24
+c8a3e1d9;Miel orgánica 500g;ALIMENTACION;3,45;33;2025-07-14
+d9f6b7a2;Cuadernos rayados;EDUCACION;1,15;60;2025-07-15
+e7c5d2b1;Sábana matrimonial;VIVIENDA;12,50;18;2025-07-20
+f1a2c3d4;Chaqueta impermeable;VESTIMENTA;29,90;12;2025-07-22
+a6b8e9c7;Crema dental junior;SALUD;2,10;70;2025-06-30
+b7d9f4a5;Tijeras escolares;EDUCACION;0,75;90;2025-06-27
+c9e1a3b6;Arroz integral 1kg;ALIMENTACION;1,95;44;2025-07-13
+d4f7c6e8;Colchón espuma 1 plaza;VIVIENDA;75,00;5;2025-07-18
+e3a8b2f9;Pantalón de jean;VESTIMENTA;22,50;20;2025-07-21
+f5c1d7a3;Jabón antibacterial 250ml;SALUD;1,25;90;2025-06-29
+a7b4c8e2;Marcadores permanentes;EDUCACION;1,80;50;2025-07-10
+b8e3d5f7;Aceite de oliva 500ml;ALIMENTACION;5,20;25;2025-07-17
+c2f6a9b4;Juego de cortinas;VIVIENDA;35,00;8;2025-07-23
+d5a7c1e8;Camisa deportiva;VESTIMENTA;18,75;15;2025-07-19
+e9f3b8a6;Termómetro de mercurio;SALUD;4,30;14;2025-07-05
+f6c2d9b1;Pegamento escolar;EDUCACION;0,95;80;2025-06-26
+a3e7f5d4;Huevos frescos 12 unidades;ALIMENTACION;2,30;60;2025-07-12
+b9d1a8c5;Cama matrimonial;VIVIENDA;120,00;4;2025-07-24
+c1f4b7e6;Bufanda lana;VESTIMENTA;14,00;22;2025-07-16
+d8e5c3a7;Vendas adhesivas;SALUD;1,15;75;2025-07-07
+e4b9d2f3;Lápices de colores;EDUCACION;2,40;55;2025-07-11
+f7a6c8b2;Harina de trigo 1kg;ALIMENTACION;1,10;38;2025-06-28
+b2c7f9e8;Chaqueta de cuero;VESTIMENTA;45,00;6;2025-07-22
+c6f1a5d3;Antibiótico jarabe;SALUD;8,50;40;2025-06-30
+d3b9e2a7;Libro de matemáticas;EDUCACION;7,20;35;2025-07-09
+e7f8c4d6;Queso mozzarella 250g;ALIMENTACION;2,95;33;2025-07-13
+f9a1d3b5;Cojín decorativo;VIVIENDA;11,00;20;2025-07-18
+a4c2e8f9;Camiseta algodón;VESTIMENTA;9,90;28;2025-07-21
+b6d5f1a3;Gel desinfectante 500ml;SALUD;3,50;45;2025-07-08
+c8e9a7b2;Agenda ejecutiva;EDUCACION;5,00;50;2025-07-10
+d7b3f6c1;Café molido 250g;ALIMENTACION;3,20;40;2025-07-12
+e1f4d8a9;Sofa 3 plazas;VIVIENDA;350,00;2;2025-07-24
+f5a7c2d6;Pantalón corto;VESTIMENTA;12,50;25;2025-07-16
+a9d8e3b4;Termómetro infrarrojo;SALUD;19,00;10;2025-07-06
+b3c5f7a8;Rotuladores fluorescentes;EDUCACION;1,75;60;2025-07-11
+c7e2a1d9;Aceite de girasol 1L;ALIMENTACION;2,15;30;2025-07-15
+d9f1b4c3;Mesa de comedor;VIVIENDA;220,00;3;2025-07-20
+e5a8d9f2;Chamarra de invierno;VESTIMENTA;39,90;12;2025-07-22
+f2c7e5b1;Vendas elásticas;SALUD;1,50;70;2025-07-07
+a6d9b3f4;Calculadora científica;EDUCACION;10,00;28;2025-07-14
+b4e7c1d5;Jugo natural 1L;ALIMENTACION;1,75;50;2025-07-10
+c1f3a8e9;Alquiler oficina pequeña;VIVIENDA;180,00;2;2025-07-19
+d8b5f2a7;Sudadera con capucha;VESTIMENTA;22,00;20;2025-07-21
+e9c6d3f8;Kit primeros auxilios;SALUD;15,00;15;2025-07-08
+f3a1b7c4;Marcadores borrables;EDUCACION;3,50;55;2025-07-11
+a7d2e9f5;Leche entera 1L;ALIMENTACION;1,40;40;2025-07-13
+b9f8c4a6;Estante para libros;VIVIENDA;48,00;6;2025-07-24
+c5e3d1b7;Camisa de algodón;VESTIMENTA;13,50;27;2025-07-18
+d2b7a9f3;Termómetro clínico;SALUD;6,75;25;2025-07-07
+e4f9c8a1;Cuaderno profesional;EDUCACION;4,25;45;2025-07-12
+f6d1b2e8;Cereal integral 500g;ALIMENTACION;2,50;50;2025-07-15
+a8c5e7d4;Alquiler local comercial;VIVIENDA;450,00;1;2025-07-23
+b1e3f9a6;Abrigo impermeable;VESTIMENTA;33,00;18;2025-07-22
+c4a7d8b9;Antiséptico en spray;SALUD;3,00;60;2025-07-08
+d7f5b1c3;Rotuladores para pizarras;EDUCACION;2,00;55;2025-07-11
+e9c2a6f7;Arroz blanco 1kg;ALIMENTACION;1,80;42;2025-07-14
+f5d9e3a4;Mesa auxiliar;VIVIENDA;30,00;7;2025-07-20
+a3b6c7d8;Camiseta deportiva;VESTIMENTA;15,50;23;2025-07-19
+b7e9f4a5;Tiritas adhesivas;SALUD;1,20;90;2025-07-07
+c2d8a1e6;Libro de historia;EDUCACION;6,00;40;2025-07-12
+d5f7b3c9;Queso cheddar 250g;ALIMENTACION;3,10;37;2025-07-15
+e1a9c5f4;Cojín lumbar;VIVIENDA;13,00;16;2025-07-18
+f8c4e2b3;Pantalón de vestir;VESTIMENTA;20,00;19;2025-07-21
+a6d7f1e9;Termómetro digital;SALUD;8,00;22;2025-07-06
+b3e5a8c1;Plumones de colores;EDUCACION;2,50;65;2025-07-11
+c9f1d2a7;Aceite de coco 500ml;ALIMENTACION;4,75;35;2025-07-16
+d8a5c9f2;Sillón reclinable;VIVIENDA;280,00;3;2025-07-23
+e7b3f4d1;Suéter lana;VESTIMENTA;27,00;17;2025-07-20
+f6d9e8a4;Pastillas para dolor;SALUD;5,50;50;2025-07-08
+a1c2b3d4;Lapiceros gel;EDUCACION;1,00;70;2025-07-11
+b9e4f7c5;Cereal de maíz 500g;ALIMENTACION;2,20;48;2025-07-13
+c3f6a8b7;Estantería modular;VIVIENDA;55,00;6;2025-07-21
+d4b7c1a9;Chaqueta polar;VESTIMENTA;30,50;14;2025-07-19
+e8f3d2b6;Crema para manos;SALUD;3,30;40;2025-07-09
+f2a5c8e7;Papel bond 500 hojas;EDUCACION;4,80;60;2025-07-10
+a7d1e3f8;Pan integral 500g;ALIMENTACION;1,25;55;2025-07-12
+b6c9f4a2;Mesa de centro;VIVIENDA;45,00;5;2025-07-22
+c1e7a5b3;Camisa formal;VESTIMENTA;19,80;21;2025-07-18
+d3f8b9e4;Termómetro de oído;SALUD;22,00;12;2025-07-07
+e5a1c6d7;Agenda escolar;EDUCACION;3,75;50;2025-07-11
+f9b2d7a5;Yogur natural 1L;ALIMENTACION;2,00;45;2025-07-14
+a4c3e8f9;Lámpara de mesa;VIVIENDA;38,00;7;2025-07-20
+b5f6d1a3;Pantalones vaqueros;VESTIMENTA;21,50;18;2025-07-21
+c7a8e9b4;Gel antibacterial;SALUD;3,75;55;2025-07-08
+d9c1f2e6;Marcadores de pizarra;EDUCACION;2,10;65;2025-07-11
+e2f7b4a9;Azúcar moreno 1kg;ALIMENTACION;1,10;50;2025-07-13
+f8a9c5d7;Sillón oficina;VIVIENDA;120,00;4;2025-07-23
+a3b4d6e1;Chamarra de cuero;VESTIMENTA;39,00;13;2025-07-20
+b1c7e8f5;Vendas para heridas;SALUD;1,35;80;2025-07-09
+c4d2a3f6;Cuaderno cuadriculado;EDUCACION;2,90;75;2025-07-12
+d7e9b5c1;Cereal de avena 500g;ALIMENTACION;2,50;42;2025-07-14
+e1f3a7d9;Mesa de comedor;VIVIENDA;250,00;3;2025-07-22
+f5b8c6a4;Camiseta deportiva;VESTIMENTA;16,50;20;2025-07-18
+a9d4e7f3;Termómetro digital;SALUD;9,00;25;2025-07-07
+b2c3f1e8;Plumones permanentes;EDUCACION;3,20;55;2025-07-10
+c6e5a9d7;Aceite vegetal 1L;ALIMENTACION;2,00;48;2025-07-15
+d3f8b6c4;Espejo decorativo;VIVIENDA;29,00;6;2025-07-23
+e7a1c4b5;Sudadera con capucha;VESTIMENTA;23,00;19;2025-07-20
+f4d9e2a7;Botiquín básico;SALUD;14,00;18;2025-07-08
+a6b3c8f2;Marcadores escolares;EDUCACION;1,80;60;2025-07-11
+b8e5f9d1;Leche deslactosada 1L;ALIMENTACION;1,60;50;2025-07-13
+c1d7a3e4;Sofá 2 plazas;VIVIENDA;300,00;3;2025-07-22
+d5f9b2c7;Pantalón casual;VESTIMENTA;18,00;22;2025-07-18
+e9a6c1d3;Tiras adhesivas;SALUD;1,10;90;2025-07-07
+f3c8e5b4;Libro de ciencias;EDUCACION;7,50;40;2025-07-10
+a7d4f3e2;Café instantáneo 250g;ALIMENTACION;3,00;38;2025-07-14
+b9f1a7c5;Estante para cocina;VIVIENDA;50,00;6;2025-07-21
+c5e8d9b6;Camisa informal;VESTIMENTA;14,50;25;2025-07-19
+d2b3a7f8;Termómetro clínico;SALUD;7,00;20;2025-07-07
+e4f6c2a1;Cuaderno profesional;EDUCACION;4,50;45;2025-07-12
+f6d7b8e9;Cereal con frutos secos;ALIMENTACION;2,80;48;2025-07-15
+b1e3f7a9;Abrigo invierno;VESTIMENTA;35,00;16;2025-07-20
+c4a7d8f2;Antiséptico líquido;SALUD;3,50;55;2025-07-08
+d7f5b2c3;Rotuladores fluorescentes;EDUCACION;2,20;60;2025-07-11
+e9c2a7f4;Arroz integral 1kg;ALIMENTACION;2,10;43;2025-07-14
+f5d8e4a6;Mesa auxiliar;VIVIENDA;32,00;7;2025-07-20
+a3b6c9d7;Camiseta deportiva;VESTIMENTA;17,00;21;2025-07-19
+b7e9f2a5;Tiritas adhesivas;SALUD;1,25;85;2025-07-07
+c2d7a3e9;Libro de historia;EDUCACION;6,50;40;2025-07-12
+d5f6b9c1;Queso cheddar 300g;ALIMENTACION;3,30;34;2025-07-15
+e1a8c7f3;Cojín decorativo;VIVIENDA;14,00;18;2025-07-18
+f8c5e2b9;Pantalón de vestir;VESTIMENTA;21,00;20;2025-07-21
+a6d8f3e7;Termómetro digital;SALUD;8,50;23;2025-07-06
+b3e6a9c5;Plumones de colores;EDUCACION;2,70;60;2025-07-11
