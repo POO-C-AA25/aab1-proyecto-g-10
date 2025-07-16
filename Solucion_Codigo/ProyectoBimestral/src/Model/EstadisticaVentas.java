@@ -1,19 +1,15 @@
 package Model;
 
 import java.io.FileOutputStream;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Formatter;
 
-/**
- * Clase encargada de registrar, analizar y exportar estadísticas
- * de ventas por producto y por categoría.
- */
-public class EstadisticaVentas {
-
-    public static class RegistroProducto {
+public class EstadisticaVentas implements Serializable {
+    public static class RegistroProducto implements Serializable {
         public String codigoProducto;
         public String nombreProducto;
         public int unidadesVendidas;
@@ -27,7 +23,7 @@ public class EstadisticaVentas {
         }
     }
 
-    public static class RegistroCategoria {
+    public static class RegistroCategoria implements Serializable {
         public String nombreCategoria;
         public int unidadesVendidas;
         public double totalGenerado;
@@ -39,7 +35,6 @@ public class EstadisticaVentas {
         }
     }
 
-    // Listas que acumulan las ventas totales agrupadas
     private ArrayList<RegistroProducto> ventasPorProducto;
     private ArrayList<RegistroCategoria> ventasPorCategoria;
 
@@ -55,7 +50,6 @@ public class EstadisticaVentas {
         int cantidad = detalle.getUnidadesVendidas();
         double subtotal = detalle.getSubtotal();
 
-        // Actualizar ventas por producto
         RegistroProducto prod = buscarProductoRegistrado(codigo);
         if (prod == null) {
             prod = new RegistroProducto(codigo, nombre);
@@ -64,7 +58,6 @@ public class EstadisticaVentas {
         prod.unidadesVendidas += cantidad;
         prod.totalGenerado += subtotal;
 
-        // Actualizar ventas por categoría
         RegistroCategoria cat = buscarCategoriaRegistrada(categoria);
         if (cat == null) {
             cat = new RegistroCategoria(categoria);
@@ -72,9 +65,8 @@ public class EstadisticaVentas {
         }
         cat.unidadesVendidas += cantidad;
         cat.totalGenerado += subtotal;
-    }   
+    }
 
-    /** Busca si el producto ya tiene un registro previo de ventas */
     public RegistroProducto buscarProductoRegistrado(String codigo) {
         for (RegistroProducto rp : ventasPorProducto) {
             if (rp.codigoProducto.equals(codigo)) {
@@ -82,9 +74,8 @@ public class EstadisticaVentas {
             }
         }
         return null;
-    }    
+    }
 
-    // Busca si la categoría ya tiene un registro previo de ventas
     public RegistroCategoria buscarCategoriaRegistrada(String nombreCategoria) {
         for (RegistroCategoria rc : ventasPorCategoria) {
             if (rc.nombreCategoria.equalsIgnoreCase(nombreCategoria)) {
@@ -94,10 +85,6 @@ public class EstadisticaVentas {
         return null;
     }
 
-    /**
-     * Guarda las estadísticas en un archivo CSV llamado "persistirEstadisticas.csv".
-     * Incluye dos secciones: por producto y por categoría.
-     */
     public void persistirEstadisticasCSV() {
         try (Formatter f = new Formatter(new FileOutputStream("datosestadisticas.csv", true))) {
             LocalDateTime ahora = LocalDateTime.now();
@@ -108,8 +95,6 @@ public class EstadisticaVentas {
             for (RegistroProducto rp : ventasPorProducto) {
                 f.format("%s;%s;%d;%.2f%n", rp.codigoProducto, rp.nombreProducto, rp.unidadesVendidas, rp.totalGenerado);
             }
-
-            // Sección: Ventas por Categoría
             f.format("%nVentas por Categoría%n");
             f.format("nombreCategoria;unidadesVendidas;totalGenerado%n");
             for (RegistroCategoria rc : ventasPorCategoria) {
@@ -119,29 +104,14 @@ public class EstadisticaVentas {
             System.err.println("Error al guardar estadísticas: " + e.getMessage());
         }
     }
-    
 
-    public void mostrarResumenEstadistico() {
-        if (ventasPorProducto.isEmpty()) {
-            System.out.println("No hay ventas registradas.");
-            return;
-        }
-
+    public ArrayList<RegistroProducto> getVentasPorProductoOrdenadas() {
         ventasPorProducto.sort(Comparator.comparingInt(rp -> -rp.unidadesVendidas));
-        RegistroProducto masVendido = ventasPorProducto.get(0);
-        RegistroProducto menosVendido = ventasPorProducto.get(ventasPorProducto.size() - 1);
+        return ventasPorProducto;
+    }
 
-        System.out.println("=== PRODUCTO MÁS VENDIDO ===");
-        System.out.printf("%s (%s): %d unidades%n", masVendido.nombreProducto, masVendido.codigoProducto, masVendido.unidadesVendidas);
-
-        System.out.println("=== PRODUCTO MENOS VENDIDO ===");
-        System.out.printf("%s (%s): %d unidades%n", menosVendido.nombreProducto, menosVendido.codigoProducto, menosVendido.unidadesVendidas);
-
-        // Ordenar categorías
+    public ArrayList<RegistroCategoria> getVentasPorCategoriaOrdenadas() {
         ventasPorCategoria.sort(Comparator.comparingInt(rc -> -rc.unidadesVendidas));
-        RegistroCategoria categoriaTop = ventasPorCategoria.get(0);
-
-        System.out.println("=== CATEGORÍA MÁS VENDIDA ===");
-        System.out.printf("%s: %d unidades%n", categoriaTop.nombreCategoria, categoriaTop.unidadesVendidas);
+        return ventasPorCategoria;
     }
 }

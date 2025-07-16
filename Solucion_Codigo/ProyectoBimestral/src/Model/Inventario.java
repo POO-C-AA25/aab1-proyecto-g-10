@@ -35,6 +35,13 @@ public class Inventario {
         }
         return null; // No se encontró el producto
     }
+    
+    /**
+     * Devuelve la lista completa de productos (lectura).
+     */
+    public ArrayList<Producto> obtenerProductos() {
+        return listaProductos;
+    }
 
     public void mostrarInventario() {
         System.out.println("+----------+--------------------------------+------------+----------+-------+----------+");
@@ -45,12 +52,5 @@ public class Inventario {
             System.out.println(producto);
         }
         System.out.println("+----------+--------------------------------+------------+----------+-------+----------+");
-    }
-
-    /**
-     * Devuelve la lista completa de productos (lectura).
-     */
-    public ArrayList<Producto> obtenerProductos() {
-        return listaProductos;
-    }
+    }    
 }

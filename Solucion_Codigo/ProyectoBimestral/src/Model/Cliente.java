@@ -1,29 +1,40 @@
 package Model;
 
+import java.io.Serializable;
+
 /**
- * Clase que define los datos personales y de contacto de un cliente.
- * Utilizada para asociar un comprador a una factura dentro del sistema.
+ * Representa los datos personales y de contacto de un cliente del SuperMaxi Loja.
+ * @author Usuario
  */
-public class Cliente {
-    private String id;         // Identificador único del cliente
+public class Cliente implements Serializable {
+    private String id;         // Cédula o RUC del cliente
     private String nombre;     // Nombre completo
     private String email;      // Dirección de correo electrónico
     private String celular;    // Número telefónico
-    private String ubicacion;  // Domicilio del cliente
+    private String ubicacion;  // Dirección domiciliaria
 
+    // Constructor vacío
     public Cliente() {
-        // Constructor vacío
     }
 
+    // Constructor completo
     public Cliente(String id, String nombre, String email, String celular, String ubicacion) {
-        this.id        = id;
-        this.nombre    = nombre;
-        this.email     = email;
-        this.celular   = celular;
+        this.id = id;
+        this.nombre = nombre;
+        this.email = email;
+        this.celular = celular;
         this.ubicacion = ubicacion;
     }
     
-    // Métodos para acceder a los datos del cliente
+    public boolean esConsumidorFinal() {
+        return false;
+    }
+    
+    public String getTipoCliente() {
+        return "GENERAL";
+    }
+
+    // Getters
     public String getId() {
         return id;
     }
@@ -32,19 +43,19 @@ public class Cliente {
         return nombre;
     }
 
-    public String getCorreo() {
+    public String getEmail() {
         return email;
     }
 
-    public String getTelefono() {
+    public String getCelular() {
         return celular;
     }
 
-    public String getDireccion() {
+    public String getUbicacion() {
         return ubicacion;
     }
 
-    // Devuelve una representación legible del cliente
+    // Representación del cliente como texto legible
     @Override
     public String toString() {
         return String.format("Cédula/RUC: %s | Nombre: %s | Correo: %s | Teléfono: %s | Dirección: %s",
