@@ -2,23 +2,17 @@ package Model;
 
 /**
  * Producto importado que tiene recargo de arancel y no aplica descuentos.
- * @author Usuario
+ * @author Mateo Gonzáles y Mateo Rivera
  */
 public class ProductoImportado extends Producto{
-    // Porcentaje de arancel 
     private double porcentajeArancel = 0.15;
-
+    
     public ProductoImportado(){
         // Constructor vacío
     }
     
-    public ProductoImportado(String descripcion, String categoria, double precioBase, int unidadesDisponibles) {
-        super(descripcion, categoria, precioBase, unidadesDisponibles);
-    }
-
-    public ProductoImportado(String descripcion, String categoria, double precioBase, int unidadesDisponibles, double porcentajeArancel) {
-        super(descripcion, categoria, precioBase, unidadesDisponibles);
-        this.porcentajeArancel = porcentajeArancel;
+    public ProductoImportado(String descripcion, String categoria, double precioBase, int unidadesDisponibles, String etiqueta) {
+        super(descripcion, categoria, precioBase, unidadesDisponibles, etiqueta);
     }
 
     public double getPorcentajeArancel() {

@@ -42,15 +42,4 @@ public class Inventario {
     public ArrayList<Producto> obtenerProductos() {
         return listaProductos;
     }
-
-    public void mostrarInventario() {
-        System.out.println("+----------+--------------------------------+------------+----------+-------+----------+");
-        System.out.println("| CÓDIGO   | NOMBRE DEL PRODUCTO             | CATEGORÍA  | PRECIO   | STOCK | CADUCA   |");
-        System.out.println("+----------+--------------------------------+------------+----------+-------+----------+");
-
-        for (Producto producto : listaProductos) {
-            System.out.println(producto);
-        }
-        System.out.println("+----------+--------------------------------+------------+----------+-------+----------+");
-    }    
 }

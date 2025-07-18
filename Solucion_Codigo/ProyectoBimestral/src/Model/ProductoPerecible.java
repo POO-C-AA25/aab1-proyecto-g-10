@@ -5,16 +5,18 @@ import java.time.temporal.ChronoUnit;
 
 /**
  *
- * @author Usuario
+ * @author Mateo Gonzáles y Mateo Rivera
  */
 public class ProductoPerecible extends Producto{
+    private LocalDate vencimiento;   // Fecha de vencimiento aleatoria por defecto
     
     public ProductoPerecible() {
         // Constructor vacío
     }
     
-    public ProductoPerecible(String descripcion, String categoria, double precioBase, int unidadesDisponibles, LocalDate vencimiento) {
-        super(descripcion, categoria, precioBase, unidadesDisponibles, vencimiento);
+    public ProductoPerecible(String descripcion, String categoria, double precioBase, int unidadesDisponibles, String etiqueta, LocalDate vencimiento) {
+        super(descripcion, categoria, precioBase, unidadesDisponibles, etiqueta);
+        this.vencimiento = vencimiento;
     }
 
     // Indica si el producto está a 7 o menos días de vencer
@@ -26,7 +28,7 @@ public class ProductoPerecible extends Producto{
             return dias >= 0 && dias <= 7;
         }
         return false;
-    }
+    }    
     
     @Override
     public String obtenerInformacionExtra() {
@@ -39,5 +41,9 @@ public class ProductoPerecible extends Producto{
             return getPrecioBase() * 0.7;  // 30% descuento
         }
         return getPrecioBase();
-    }   
+    }
+    
+    public LocalDate getVencimiento() {
+        return vencimiento;
+    }
 }

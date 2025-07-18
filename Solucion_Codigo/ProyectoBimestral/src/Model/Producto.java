@@ -2,7 +2,6 @@ package Model;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Random;
 import java.util.UUID;
 
 /**
@@ -14,36 +13,21 @@ public abstract class Producto implements Serializable {
     private String descripcion;      // Descripción del producto
     private String categoria;        // Categoría del producto (Vivienda, Educación, etc.) como String
     private double precioBase;       // Precio base sin descuentos
-    private int unidadesDisponibles; // Stock actual
-    private LocalDate vencimiento;   // Fecha de vencimiento aleatoria por defecto
+    private int unidadesDisponibles; // Stock actual    
+    private String etiqueta;         // Etiqueta de producto Local o Importado
     
     public Producto() {
         // Constructor vacío
     }
     
     // Constructor para productos, genera fecha de vencimiento aleatoria entre hoy y 90 días después
-    public Producto(String descripcion, String categoria, double precioBase, int unidadesDisponibles) {
+    public Producto(String descripcion, String categoria, double precioBase, int unidadesDisponibles, String etiqueta) {
         this.codigoProducto = UUID.randomUUID().toString().substring(0, 8);
         this.descripcion = descripcion;
         this.categoria = categoria;
         this.precioBase = precioBase;
         this.unidadesDisponibles = unidadesDisponibles;
-        this.vencimiento = generarFechaVencimientoAleatoria();
-    }
-
-    // Constructor adicional para permitir pasar fecha de vencimiento específica
-    public Producto(String descripcion, String categoria, double precioBase, int unidadesDisponibles, LocalDate vencimiento) {
-        this.codigoProducto = UUID.randomUUID().toString().substring(0, 8);
-        this.descripcion = descripcion;
-        this.categoria = categoria;
-        this.precioBase = precioBase;
-        this.unidadesDisponibles = unidadesDisponibles;
-        this.vencimiento = vencimiento;
-    }
-
-    private LocalDate generarFechaVencimientoAleatoria() {
-        int diasExtra = new Random().nextInt(90) + 1;
-        return LocalDate.now().plusDays(diasExtra);
+        this.etiqueta = etiqueta;
     }
 
     // Método abstracto para obtener información adicional de cada tipo de producto
@@ -86,11 +70,11 @@ public abstract class Producto implements Serializable {
     public int getUnidadesDisponibles() {
         return unidadesDisponibles;
     }
-
-    public LocalDate getVencimiento() {
-        return vencimiento;
+    
+    public String getEtiqueta() {
+        return etiqueta;
     }
-
+    
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
@@ -106,15 +90,14 @@ public abstract class Producto implements Serializable {
     public void setUnidadesDisponibles(int unidadesDisponibles) {
         this.unidadesDisponibles = unidadesDisponibles;
     }
-
-    public void setVencimiento(LocalDate vencimiento) {
-        this.vencimiento = vencimiento;
+    
+    public void setEtiqueta(String etiqueta) {
+        this.etiqueta = etiqueta;
     }
 
     @Override
     public String toString() {
         return String.format("%-8s | %-25s | %-12s | %8.2f | %4d | %10s",
-                codigoProducto, descripcion, categoria, precioBase, unidadesDisponibles,
-                (vencimiento == null ? "N/A" : vencimiento.toString()));
+                codigoProducto, descripcion, categoria, precioBase, unidadesDisponibles, etiqueta);
     }
 }

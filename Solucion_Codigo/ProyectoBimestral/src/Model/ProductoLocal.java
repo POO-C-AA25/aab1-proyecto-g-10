@@ -12,15 +12,10 @@ public class ProductoLocal extends Producto{
         // Constructor vacío
     }
     
-    public ProductoLocal(String descripcion, String categoria, double precioBase, int unidadesDisponibles) {
-        super(descripcion, categoria, precioBase, unidadesDisponibles);
+    public ProductoLocal(String descripcion, String categoria, double precioBase, int unidadesDisponibles, String etiqueta) {
+        super(descripcion, categoria, precioBase, unidadesDisponibles, etiqueta);
     }
-
-    public ProductoLocal(String descripcion, String categoria, double precioBase, int unidadesDisponibles, double porcentajeDescuento) {
-        super(descripcion, categoria, precioBase, unidadesDisponibles);
-        this.porcentajeDescuento = porcentajeDescuento;
-    }
-
+    
     public double getPorcentajeDescuento() {
         return porcentajeDescuento;
     }

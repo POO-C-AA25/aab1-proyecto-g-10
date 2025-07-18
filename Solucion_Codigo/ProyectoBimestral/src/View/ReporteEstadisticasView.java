@@ -1,8 +1,8 @@
 package View;
 
 import Model.EstadisticaVentas;
-import Model.EstadisticaVentas.RegistroProducto;
-import Model.EstadisticaVentas.RegistroCategoria;
+import Model.RegistroProducto;
+import Model.RegistroCategoria;
 
 import java.util.ArrayList;
 

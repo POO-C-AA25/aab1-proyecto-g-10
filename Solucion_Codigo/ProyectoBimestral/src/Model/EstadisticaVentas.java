@@ -9,32 +9,6 @@ import java.util.Comparator;
 import java.util.Formatter;
 
 public class EstadisticaVentas implements Serializable {
-    public static class RegistroProducto implements Serializable {
-        public String codigoProducto;
-        public String nombreProducto;
-        public int unidadesVendidas;
-        public double totalGenerado;
-
-        public RegistroProducto(String codigo, String nombre) {
-            this.codigoProducto = codigo;
-            this.nombreProducto = nombre;
-            this.unidadesVendidas = 0;
-            this.totalGenerado = 0.0;
-        }
-    }
-
-    public static class RegistroCategoria implements Serializable {
-        public String nombreCategoria;
-        public int unidadesVendidas;
-        public double totalGenerado;
-
-        public RegistroCategoria(String categoria) {
-            this.nombreCategoria = categoria;
-            this.unidadesVendidas = 0;
-            this.totalGenerado = 0.0;
-        }
-    }
-
     private ArrayList<RegistroProducto> ventasPorProducto;
     private ArrayList<RegistroCategoria> ventasPorCategoria;
 

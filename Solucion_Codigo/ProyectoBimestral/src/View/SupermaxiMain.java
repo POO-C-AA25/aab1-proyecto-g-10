@@ -1,6 +1,10 @@
 package View;
 
-import Controller.Controller;
+import Model.*;
+import Controller.*;
+
+import java.io.File;
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 /**
@@ -10,8 +14,16 @@ import java.util.Scanner;
  */
 public class SupermaxiMain {
     public static void main(String[] args) {
-        Controller gestor = new Controller();
-        Scanner entrada = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        NumberFormat formato = NumberFormat.getInstance();
+
+        Inventario inventario = new Inventario();
+        Deducibles deducibles = new Deducibles();
+        EstadisticaVentas estadistica = new EstadisticaVentas();
+        
+        InventarioController invCSV = new InventarioController();
+        invCSV.cargarDesdeCSV();
+        
         boolean continuar = true;
 
         while (continuar) {
@@ -26,19 +38,17 @@ public class SupermaxiMain {
             System.out.println("+------------------------------------------------------+");
             System.out.print(">> Seleccione una opción del menú: ");
 
-            String opcion = entrada.nextLine().trim();
+            String opcion = sc.nextLine().trim();
 
             switch (opcion) {
                 case "1":
-                    gestor.mostrarInventarioDisponible();
+                    
                     break;
-
                 case "2":
                     System.out.print("Ingrese contraseña de administrador: ");
-                    String clave = entrada.nextLine().trim();
+                    String clave = sc.nextLine().trim();
 
                     if (clave.equals("1150525077")) {
-                        gestor.nuevoProducto();
                     } else {
                         System.out.println("Acceso denegado. Contraseña incorrecta.");
                         continuar = false; // Finaliza el programa si la clave es incorrecta
@@ -46,11 +56,9 @@ public class SupermaxiMain {
                     break;
 
                 case "3":
-                    gestor.generarFactura();
                     break;
 
                 case "4":
-                    gestor.mostrarResumenEstadistico();
                     break;
 
                 case "5":
@@ -62,6 +70,5 @@ public class SupermaxiMain {
             }
         }
         System.out.println("Aplicación finalizada.");
-        entrada.close();
     }
 }

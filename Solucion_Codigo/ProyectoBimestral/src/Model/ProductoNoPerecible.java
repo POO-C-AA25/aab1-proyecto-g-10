@@ -10,8 +10,8 @@ public class ProductoNoPerecible extends Producto {
         // Constructor vacío
     }
     
-    public ProductoNoPerecible(String descripcion, String categoria, double precioBase, int unidadesDisponibles) {
-        super(descripcion, categoria, precioBase, unidadesDisponibles);
+    public ProductoNoPerecible(String descripcion, String categoria, double precioBase, int unidadesDisponibles, String etiqueta) {
+        super(descripcion, categoria, precioBase, unidadesDisponibles, etiqueta);
     }
     
     @Override
